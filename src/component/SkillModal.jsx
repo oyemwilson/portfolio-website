@@ -33,7 +33,7 @@ const SkillsModal = ({ isOpen, onClose }) => {
           <div className="modal-header">
             <h2 className="modal-title" style={{ textDecoration: 'none' }}>What I Do 👨‍💻</h2>
             <button type="button" className="close" onClick={onClose}>
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="modal__close-btn-icon"><path d="M11.2627 28.7384L20.001 20.0001M28.7394 11.2617L19.9994 20.0001M19.9994 20.0001L11.2627 11.2617M20.001 20.0001L28.7394 28.7384" stroke="#7D8487" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="modal__close-btn-icon"><path d="M11.2627 28.7384L20.001 20.0001M28.7394 11.2617L19.9994 20.0001M19.9994 20.0001L11.2627 11.2617M20.001 20.0001L28.7394 28.7384" stroke="#7D8487" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </button>
           </div>
 

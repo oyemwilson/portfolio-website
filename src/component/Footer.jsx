@@ -4,11 +4,11 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import styles from "../assets/styles/footer.css"
 
 const Footer = () => {
-    return (
-        <footer className="bg-dark text-white py-3" id='container'>
-            <div className="container text-center">
-                <div className="d-flex justify-content-center">
-                <a
+  return (
+    <footer className="bg-dark text-white py-3" id='container'>
+      <div className="container text-center">
+        <div className="d-flex justify-content-center">
+          <a
             target="_blank"
             rel="noreferrer noopener"
             href="https://www.linkedin.com/in/oyemwilson/"
@@ -34,10 +34,10 @@ const Footer = () => {
               />
             </figure>
           </a>                </div>
-                <p className="mt-5">© 2024 OYEM WILSON. All Rights Reserved.</p>
-            </div>
-        </footer>
-    );
+        <p className="mt-5">© 2024 OYEM WILSON. All Rights Reserved.</p>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

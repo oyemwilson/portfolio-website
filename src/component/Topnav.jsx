@@ -13,21 +13,21 @@ const Topnav = () => {
     AOS.init({
       duration: 1000,
       once: false,
-      
+
     });
   }, []);
-  
+
 
 
   return (
     <Navbar bg="dark" id='navbar' variant="dark" expand="md" className="py-3">
       <Container fluid className="px-4">
-      <div data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-back"
-              data-aos-delay="300"
-              data-aos-offset="0">
-        <Navbar.Brand href="/" className="fw-bold">OYEM WILSON</Navbar.Brand>
-      </div>
+        <div data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0">
+          <Navbar.Brand href="/" className="fw-bold">OYEM WILSON</Navbar.Brand>
+        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           {/* <span className="navbar-toggler-icon"></span> */}
           <div class="hamburger__line hamburger__line--one"></div>
@@ -37,29 +37,31 @@ const Topnav = () => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
-          <div data-aos="fade-left" data-aos-delay="300">
-          <Nav.Link as={Link} to="/featured-work" className="me-3" data-aos="fade-left" data-aos-delay="300">
-  Work
-</Nav.Link>
-          </div>
-          <div data-aos="fade-left" data-aos-delay="400">
-          <Nav.Link as={Link} to="/about" className="me-3" data-aos="fade-left" data-aos-delay="400">
-  About
-</Nav.Link>
-          </div>
-          <div data-aos="fade-left" data-aos-delay="500">
-            <Nav.Link as={Link} to="https://drive.google.com/file/d/1U2WPEpnM270mbDAXQGHb0-9-yPdQVx7M/view?usp=sharing" target="_blank" className="me-3">Resume</Nav.Link>
-          </div>
-          {/* <div data-aos="fade-left" data-aos-delay="600">
+            <div data-aos="fade-left" data-aos-delay="300">
+              <Nav.Link as={Link} to="/featured-work" className="me-3" data-aos="fade-left" data-aos-delay="300">
+                Work
+              </Nav.Link>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="400">
+              <Nav.Link as={Link} to="/about" className="me-3" data-aos="fade-left" data-aos-delay="400">
+                About
+              </Nav.Link>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="500">
+              <Nav.Link as={Link} to="https://drive.google.com/file/d/1U2WPEpnM270mbDAXQGHb0-9-yPdQVx7M/view?usp=sharing" target="_blank" className="me-3">Resume</Nav.Link>
+            </div>
+            {/* <div data-aos="fade-left" data-aos-delay="600">
             <Nav.Link href="#" className="me-3">More</Nav.Link>
           </div> */}
             <div data-aos="fade-zoom-in"
               data-aos-easing="ease-in-back"
               data-aos-delay="300"
               data-aos-offset="0">
+              <a href="mailto:oyemwilson1@gmail.com">
+                <Button variant="light" className="topnav-button">Get in Touch</Button>
+              </a>
 
-
-          </div>
+            </div>
           </Nav>
           <TopnavFooter />
         </Navbar.Collapse>
