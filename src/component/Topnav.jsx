@@ -57,9 +57,7 @@ const Topnav = () => {
               data-aos-easing="ease-in-back"
               data-aos-delay="300"
               data-aos-offset="0">
-<a href="mailto:oyemwilson1@gmail.com">
-    <Button variant="light" className="topnav-button">Get in Touch</Button>
-</a>
+
 
           </div>
           </Nav>
