@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './assets/styles/satoshi.css'
 
 function App() {
   return (

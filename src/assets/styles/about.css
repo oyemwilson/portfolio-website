@@ -1,0 +1,104 @@
+/* .container{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+
+#about{
+    margin-left: 10vw !important;
+    margin-right: 10vw !important;
+}
+.carousel-item img {
+    width: 80% !important;
+    /* Ensures the image takes full width of its container */
+    height: 30vw !important;
+    /* Set a fixed height, adjust this value as needed */
+    object-fit: cover;
+    /* Ensures the image is resized without losing aspect ratio */
+    border-radius: 3rem;
+}
+
+
+.hero-text {
+
+
+    margin-top: 5vw;
+    width: 100%;
+
+}
+.container{
+    padding: 5vw 5vw !important;
+}
+
+.card-title-about {
+    font-size: 1.7vw !important;
+    height: 100%;
+    align-items: center;
+    color: #7d8487;
+    display: flex;
+}
+
+.bio__hand-wave__about {
+    width: 4vw !important;
+}
+.hero-h1{
+    font-size: 3vw !important;
+    
+}
+
+.about-text{
+    margin-top: 8vw;
+    font-size: 1.5vw;
+    padding: 3vw 10vw !important;
+    background-color: #7d848730;
+    color: #7d8487;
+
+}
+.about-text p{
+    margin-top: 3vw;
+    line-height: 3vw;
+    transition: color 1s ease-in-out;
+}
+.page {
+
+  }
+  
+  .about-container {
+    position: relative;
+    padding-bottom: 50px; /* Space to ensure bottom part is not cut off */
+  }
+  
+
+  @media (max-width: 767px) {
+    .carousel-item img{
+        width: 100% !important;
+        height: 110vw !important;
+    }
+    .bio__hand-wave__about {
+        width: 10vw !important;
+    }
+    .card-title-about p{
+        font-size: 4.5vw !important;
+
+    }
+    #about{
+    margin: 0vw 6vw !important;
+    }
+    .hero-h1{
+        font-size: 9vw !important;
+        margin-top: 2vw;
+        line-height: 15vw;
+        margin-bottom: 5vw;
+    }
+    .about-text p{
+        font-size: 5vw;
+        line-height: 10vw !important;
+    }
+    .about-text {
+        opacity: 1 !important;
+        margin-top: 0 !important;
+        margin-bottom: 15vw !important;
+    }
+
+ 
+}

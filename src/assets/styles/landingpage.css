@@ -1,0 +1,538 @@
+.headline {
+  font-size: 13vw;
+  font-weight: 500;
+  padding-top: 1.5rem;
+  translate: none;
+  transform: translate(0px, 0px);
+  cursor: default;
+  text-align: center;
+  color: #7d8487 !important;
+  /* Ensures words wrap on smaller screens */
+}
+
+.home-container .headline span {
+  transition: color 0.3s ease-in;
+}
+
+.home-container .headline span:hover {
+  color: white;
+}
+
+.home-container {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.line-break {
+  display: block;
+}
+.space {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .line-break {
+    display: inline;
+  }
+  .space {
+    display: inline;
+  }
+}
+@media (max-width: 768px) {
+  .headline {
+    text-align: left;
+    font-size: 8rem !important;
+  }
+}
+
+/* Media Query for Tablets */
+@media (max-width: 786px) {
+  .headline {
+    font-size: 100rem; /* Adjust font size for tablets */
+    margin-top: 3vw;
+  }
+}
+@media (max-width: 1200px) {
+  .headline {
+    font-size: 7rem; /* Adjust font size for tablets */
+  }
+}
+@media (max-width: 992px) {
+  .headline {
+    font-size: 6rem; /* Adjust font size for tablets */
+  }
+}
+@media (max-width: 968px) {
+  .headline {
+    font-size: 6rem;
+    white-space: normal; /* Adjust font size for tablets */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 695px) {
+  .headline {
+    font-size: 7rem !important; /* Adjust font size for mobile devices */
+
+  }
+}
+@media (max-width: 615px) {
+  .headline {
+    font-size: 6rem !important; /* Adjust font size for mobile devices */
+  }
+}
+@media (max-width: 540px) {
+  .headline {
+    font-size: 4.5rem !important; /* Adjust font size for mobile devices */
+  }
+}
+@media (max-width: 440px) {
+  .headline {
+    font-size: 3.5rem !important; /* Adjust font size for mobile devices */
+  }
+}
+/* background: #e27625; */
+
+
+.card{
+  height: 23.5vw !important;
+  margin-top: 1.5rem;
+  transition: background-color .8s ease-out;
+  background-color: #1a1a1c !important;
+  color: white !important;
+  border: 1px solid #323335 !important;
+  border-radius: 2em !important;
+  overflow: visible;
+}
+@media (max-width: 767px) {
+  .card{
+    height: 60vw !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #card[data-aos] {
+    opacity: 1 !important;
+    transform: translate(0) scale(1) !important;
+  }
+}
+
+
+/* @media (max-width: 768px) {
+  #class[data-aos] {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  #class[data-aos].aos-animate {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} */
+/* .card-body-1{
+  display: flex;
+  flex-direction: column;
+  margin: auto 2rem;
+}
+.card-title-1{
+  font-size: 4rem;
+}
+.card-text-1{
+  font-size: 1.8rem;
+  font-weight: 1px;
+} */
+.card-body-1{
+margin-top: 5vw;
+margin-left: 2vw;
+}
+.bio__hand-wave{
+  width: 6vw !important;
+}
+.card-title-1{
+
+  display: flex;
+}
+.card-title-1 h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5vw;
+  font-weight: 500;
+  
+}
+@media (max-width: 767px) {
+  .card-body-1{
+    margin-top: 15vw;
+    margin-left: 10vw ;
+  }
+  .card-title-1 h1{
+    font-size: 8vw;
+  }
+  .card-text-1{
+    opacity: 0 !important;
+    display: none !important;
+  }
+  .card-text-1-sm{
+    opacity: 1 !important;
+    font-size: 4vw !important;
+    margin-top: 5vw;
+  }
+  #arrow-image{
+    width: 8vw !important;
+    top: 8vw !important
+  }
+  .bio__hand-wave{
+    width: 15vw !important;
+  }
+  .text-hover-1{
+    font-size: 8vw !important;
+  }
+}
+.card-title-1 img{
+  width: 10rem;
+}
+
+.card-text-1{
+  font-size: 1.5vw;
+  width: 60%;
+}
+
+#arrow-image{
+  position: absolute;
+  top: 3vw;
+  width: 3vw;
+  height: 100%;
+  transition: top 1s ease-in-out;
+}
+
+.card:hover #arrow-image{
+  top: 5vw;
+
+}
+.card:hover .card-text-1-sm{
+  opacity: 0 !important;
+}
+.card:hover{
+  background: #e27625 !important;
+}
+.card:hover .text-hover-1 {
+  opacity: 1 !important; /* Show content on hover */
+  transition: opacity  0.7s ease-in-out;
+}
+
+.card-title-1,
+.card-text-1 {
+  opacity: 1; /* Set initial opacity to 1 */
+  transition: opacity 0.7s ease-in-out;
+}
+
+.card:hover .card-title-1,
+.card:hover .card-text-1 {
+  opacity: 0 ; /* Hide original title and text on hover */
+}
+
+.text-hover-1 {
+  /* Customize hover text appearance (optional) */
+  position: absolute;
+  color: white; /* Example */
+  font-size: 3.7vw;
+  width: 37%;
+  top: 2.5rem;
+}
+
+.card-body-2 {
+  position: relative; /* This anchors the absolute positioning inside the card */
+  margin-top: 2rem;
+  margin-left: 2rem;
+  overflow: hidden;
+  height: 100%; /* Make sure the card has a set height, otherwise it might collapse */
+}
+
+.card-body-2 img {
+  width: 47vw; /* Adjust the width responsively */
+  position: absolute; /* Position it at the bottom of the card */
+  bottom: -1vw; /* Ensures the image is stuck to the bottom */
+  left: 0;  /* Optionally align it to the left */
+}
+
+#card2{
+  background-color: #343639  !important;
+  overflow: hidden;
+}
+#card2:hover{
+  background: #e27625 !important;
+}
+.card-title-2{
+  font-size: 1.5vw;
+  margin-bottom: 0;
+}
+.card-text-2{
+  font-size: 3vw;
+  margin-top: 0;
+}
+
+#arrow-image2{
+  position: absolute;
+  top: -5.5vw;
+  width: 3vw;
+  height: 100%;
+  transition: top 1s ease-in-out;
+  float: right;
+}
+
+/* */
+@media (max-width: 767px) {
+  .card-body-2 img {
+    width: 120vw; /* Adjust the width responsively */
+    left: -25vw !important;  /* Optionally align it to the left */
+    bottom: -6vw !important;
+  }
+  .card-title-2{
+    font-size: 3.5vw;
+  }
+  .card-text-2{
+    font-size: 6vw;
+    transform: translateX(-14.6vw) !important;
+  }
+  #arrow-image2{
+    position: absolute;
+    top: -14vw ;
+    width: 8vw;
+  }
+}
+
+
+.card:hover .text-full {
+  transform: translateX(-100%); /* Slides the full text into view */
+}
+
+.card-text-2 {
+
+  white-space: nowrap; /* Prevent text from wrapping */
+  transform: translateX(-11.6vw); /* Initially show "Case Study" part */
+  transition: transform 0.9s ease-in-out; /* Smooth slide-in effect */
+}
+
+.card:hover .card-text-2 {
+  transform: translateX(0); /* Slide to reveal "View My" */
+}
+
+.card:hover .card-body-2,
+.card:hover #arrow-image2
+{
+  transform: translateY(2vw);
+  transition: transform 0.9s ease-in-out;
+}
+
+ .card-body-2, #arrow-image2
+{
+  transform: translateY(0vw);
+  transition: transform 0.9s ease-in-out;
+}
+.card-text-3, .card-text-3-hover{
+  font-size: 3vw;
+  width: 70%;
+  line-height: 5vw;
+  position: relative;
+  bottom: 0vw;
+}
+.card-body-3{
+  margin-left: 2vw;
+}
+#arrow-image3{
+  position: relative;
+  bottom: 6vw;
+  margin-right: 1vw;
+  width: 3vw;
+}
+.designs__icon{
+  position: relative;
+  top: 4vw;
+  width: 4vw;
+}
+@media (max-width: 767px) {
+  .card-text-3, .card-text-3-hover{
+    font-size: 10vw;
+    width: 60%;
+    /* height: 100%; */
+    line-height: 12vw;
+  }
+  .designs__icon{
+    width: 10vw;
+  }
+  .card-body-3{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vw;
+  }
+  #arrow-image3{
+    width: 8vw;
+    margin-right: 48px;
+    bottom: 12vw;
+  }
+  .medium-article{
+    display: none;
+  }
+}
+
+.card:hover .card-text-3-hover{
+opacity: 1 !important;
+transition: opacity 0.9s ease-in-out !important;
+}
+
+.card .card-text-3-hover{
+  opacity: 0 !important;
+  transition: opacity 0.9s ease-in-out !important;
+  margin-bottom: 0;
+}
+
+.card .designs__icon{
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out !important;
+}
+.card:hover .designs__icon{
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out !important;
+}
+
+.card-body-4{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.linkedin__icon{
+  width: 5vw;
+  position: absolute;
+  transition: width 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+.linkedin__arrow{
+  width: 3.3vw;
+  position: absolute;
+  bottom: 4vw;
+  right: 2vw;
+  transition: transform 0.9s ease-in-out;
+
+}
+
+.text-hover-4{
+  opacity: 0;
+  position: absolute;
+  bottom: 6vw;
+  transition: opacity 0.9s ease-in-out;
+  font-size: 1.5vw;
+}
+
+.card:hover .text-hover-4{
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out !important;
+}
+
+.card:hover .linkedin__icon {
+  width: 7vw;
+  transform: translateY(-1.5vw);
+  transition: width 0.9s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.card:hover .linkedin__arrow{
+  transform: translateY(2vw);
+  transition: transform 0.9s ease-in-out;
+}
+.skills__item-icon{
+  justify-content: center !important;
+  width: 7vw;
+}
+
+/* #skill-section{
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+} */
+#skill-container{
+  margin-right: 4vw;
+ transform: translateY(2.3vw) ;
+  transition: transform 0.9s ease-in-out;
+}
+.skill-text{
+  font-size: 1.5vw;
+}
+.card-body-5{
+
+}
+.card-title-5{
+  margin-left: 2vw;
+  font-size: 1.3vw;
+  top: 4.5vw;
+  font-weight: 50;
+  position: absolute;
+  transition: opacity 0.9s ease-in-out;
+  
+}
+.card:hover .card-title-5{
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+}
+.card-text-5{
+  margin-left: 2vw;
+  font-size: 2.5vw;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(3vw);
+  transition: opacity 0.9s ease-in-out,transform 0.9s ease-in-out;
+}
+
+.card:hover .card-text-5{
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.9s ease-in-out,transform 0.9s ease-in-out;
+}
+.card:hover #skill-container{
+  transform: translateY(-1.6vw) ;
+  transition: transform 0.9s ease-in-out;
+}
+.arrow-5{
+  width: 2vw !important;
+  position: absolute;
+  bottom: 4vw;
+  right: 2vw;
+}
+@media (max-width: 767px) {
+  .cards .row .what-i-do .card{
+   height: 85vw !important;
+  }
+  .card-title-5{
+    font-size: 6vw;
+    margin-left: 5vw;
+    margin-top: 5vw ;
+  }
+  .card-text-5{
+    margin-left: 9vw !important;
+  }
+  .skill-text{
+    font-size: 3.5vw;
+    align-items: center;
+    display: flex;
+    padding-left: 5vw;
+  }
+  .skills__item-icon{
+
+    width: 15vw;
+  }
+  #skill-container{
+    margin-left: 5vw !important;
+  }
+  #container-5{
+    display: flex;
+    flex-direction: row-reverse;
+    float: left;
+    justify-content: left;
+  }
+  .arrow-5{
+    width: 6vw !important;
+    position: absolute;
+    bottom: 10vw;
+    right: 8vw;
+  }
+}

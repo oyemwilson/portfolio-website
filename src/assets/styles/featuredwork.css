@@ -1,0 +1,301 @@
+.p-ui-designs{
+    height: 100vh !important;
+}
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.carousel__slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 80%;
+}
+
+.carousel__slide {
+    position: absolute;
+    top: 20%;
+    /* left: 0%; */
+    transform: translate(-50%, -50%) rotate(-5deg);
+    /* Add rotation */
+    opacity: 0;
+    transition: transform 0.8s cubic-bezier(0.9, 0, 0.5, 1), opacity 0.8s ease;
+    will-change: transform;
+}
+@media (max-width: 767.98px) {
+    .carousel__slide{
+        transform: translate(300%, -50%) rotate(-5deg) !important;
+    }
+    .carousel__slide.active {
+        opacity: 1;
+        transform: translate(0%, -50%) rotate(0deg) !important;
+        
+        /* Return to normal when active */
+    }
+    .carousel__slider {
+        width: 80% !important;
+        /* height: 100% !important; */
+    }
+    
+    .carousel__slide {
+        /* width: 100% !important; */
+        text-align: center;
+        height: 100% !important;
+    }
+    .p-ui-designs .carousel__slide {
+        /* border: none !important; */
+        /* width: 60vw !important; */
+    }
+
+    .carousel__slide-image{
+        /* width: 100vw !important; */
+        height: 100vw !important;
+    }
+    .center{
+        margin-top: 5vw !important;
+    }
+}
+
+.carousel__slide.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+    /* Return to normal when active */
+}
+
+.carousel__slide.inactive {
+    opacity: 1;
+    
+}
+
+.carousel__slide img {
+    display: block;
+    max-width: 100%;
+    max-height: 25vw;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.carousel__control-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2vw;
+    padding: 10px;
+}
+@media (max-width: 767.98px) {
+    .carousel__slide img {
+        width: 100% !important;
+        max-width: 100vw !important;
+        max-height: 100vw !important;
+    }
+    .carousel__control-btn {
+        top: 75%;
+        font-size: 4vw
+    }
+
+}
+.right__subtitle--span{
+    color: #e27625;
+}
+.p-ui-designs .carousel__control-line {
+    background-color: #323335;
+    height: .15vw;
+    width: 3.7vw;
+    margin: 0.3vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.carousel__control-btn.prev {
+    left: calc(30% - 10vw);
+    pointer-events: auto;
+    z-index: 1000; /* Bring the button to the front */
+
+    /* Adjust to be close to the image */
+}
+
+.carousel__control-btn.next {
+    right: calc(30% - 10vw);
+    /* Adjust to be close to the image */
+}
+@media (max-width: 767.98px) {
+    .carousel__control-btn.prev {
+        left: calc(40% - 20vw);
+        /* Adjust to be close to the image */
+    }
+    
+    .carousel__control-btn.next {
+        right: calc(40% - 20vw);
+        z-index: 1000;
+        /* Adjust to be close to the image */
+    }
+    .p-ui-designs .carousel__control-line{
+        height: .15vw;
+        width: 6.7vw;
+        margin: 0.9vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+}
+
+.carousel__control-btn span {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.carousel__control-btn:hover span {
+    color: #0077ff;
+}
+
+
+.right {
+    display: flex;
+    float: right;
+top: 0vw;
+position: absolute;
+right: 0;
+align-items: center;
+font-size: vw;
+height: 100%;
+}
+@media (max-width: 767.98px) {
+    .right{
+        position: absolute;
+        top: -40vw;
+        left: 37vw;
+    }
+    .subtitle--1{
+        display: none;
+    }
+    .right__block{
+        display: none;
+    }
+    #shot{
+        font-size: 5vw;
+    }
+}
+.p-ui-designs .left{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100%;
+position: fixed;
+}
+
+.left__back-btn{
+    width: 50%;
+    top: 2vw;
+    position: absolute;
+    background: none;
+    border: 0;
+}
+.left{
+    z-index: 1000;
+}
+.socials{
+    z-index: 5000;
+}
+@media (max-width: 767.98px) {
+    /* .left{
+        display: none !important;
+    } */
+    .socials{
+        position: absolute;
+        display: flex;
+        bottom: 10vw;
+        margin-left: 100vw;
+
+    }
+    .socials__icon{
+        width: 7vw !important;
+    }
+    .left__back-btn{
+        left: 5vw;
+    }
+}
+/* .footer{
+    display: none;
+} */
+.center__title paragraph--1{
+    position: absolute;
+}
+.p-ui-designs .carousel__slide {
+    border: 1px solid #323335;
+    position: absolute;
+    height: fit-content !important;
+}
+.carousel__slide-image{
+    cursor: zoom-in;
+    transform: rotate(-6deg);
+    transform-origin: center center;
+    height: 50vw !important;
+
+}
+#carousel-header{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2vw;
+}
+.p-ui-designs .right__block {
+    background-color: #fff;
+    height: 18.6vw;
+    width: 2.6vw;
+    margin-left: 1vw;
+}
+.paragraph--2{
+    font-size: 1.2vw;
+}
+.subtitle--1{
+    font-size: 2vw;
+}
+.carousel__slide {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .carousel__tooltip {
+    visibility: hidden;
+    text-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 105%; /* Position it above the image */
+    left: 50%; /* Center the tooltip */
+    transform: translateX(-50%);
+    font-size: larger;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  @media (max-width: 767.98px) {
+    .carousel__tooltip {
+        display: none;
+    }
+  }
+  
+  .carousel__slide:hover .carousel__tooltip {
+    visibility: visible;
+    opacity: 1;
+
+  }
+  .no-pointer img {
+    cursor: pointer !important;
+    /* Ensures the image itself doesn't react to clicks */
+  }

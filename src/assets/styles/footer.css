@@ -1,0 +1,19 @@
+.socials__icon{
+    width: 3rem !important;
+    margin: 0 2rem;
+    opacity: 0.6464;
+}
+
+#container{
+    background-color: black !important;
+    padding: 0rem 0 !important;
+    color: #7d8487 !important;
+
+}
+
+@media (max-width: 767px) {
+    .socials__icon{
+        width: 2rem !important;
+        margin: 0 1rem;
+    }
+}
