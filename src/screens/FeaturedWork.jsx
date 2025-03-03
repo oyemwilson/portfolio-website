@@ -15,19 +15,19 @@ const UIDesigns = () => {
     {
       src: "/assets/images/work2.png",
       alt: "Created a job website with three distinct roles: user, employer, and applicant. Employers can post job listings and manage applications, while users can browse and apply for jobs. Applicants can track their application status and manage profiles. Developed using React.js, Node.js, Express, and MongoDB to ensure smooth functionality and data management.",
-      size: { width: '40.3vw', height: '23.7vw' },
+      size: { width: '41.3vw', height: '23.7vw' },
       link: 'https://jobx-uu5x.onrender.com'
     },
     {
       src: "/assets/images/work3.png",
       alt: "Built a comprehensive HR management application with three user roles: admin, HR, and employee. The app streamlines all HR processes, including employee management, leave applications, payroll, and performance tracking. Employees can apply for leave, update personal information, and view payslips, while HR manages employee records and approvals. Developed using the MERN stack",
-      size: { width: '40.3vw', height: '23.7vw' },
+      size: { width: '42.3vw', height: '23.7vw' },
       link: 'https://tiide-hr.netlify.app/'
     },
     {
       src: "/assets/images/work4.png",
       alt: "Developed a simple single page application that fetches names and usernames from an API, allowing users to search through the data in real-time. Users can search by either name or username with instant results. Focusing on speed and simplicity in user interaction.",
-      size: { width: '40.3vw', height: '23.7vw' },
+      size: { width: '43.3vw', height: '23.7vw' },
       link: 'https://tiide-mini.netlify.app/'
     },
     // {
