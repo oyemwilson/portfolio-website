@@ -16,7 +16,7 @@ const UIDesigns = () => {
       src: "/assets/images/work2.png",
       alt: "Created a job website with three distinct roles: user, employer, and applicant. Employers can post job listings and manage applications, while users can browse and apply for jobs. Applicants can track their application status and manage profiles. Developed using React.js, Node.js, Express, and MongoDB to ensure smooth functionality and data management.",
       size: { width: '40.3vw', height: '23.7vw' },
-      link: 'https://jobx.onrender.com'
+      link: 'https://jobx-uu5x.onrender.com'
     },
     {
       src: "/assets/images/work3.png",
