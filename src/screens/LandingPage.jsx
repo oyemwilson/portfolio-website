@@ -69,7 +69,7 @@ const LandingPage = () => {
             </div>
 
             {/* Case Study Card */}
-            <div id="card" className="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up-left" data-aos-delay="400">
+            <div id="card" className="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up-left" data-aos-delay="400" >
               <Link to="/featured-work" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="card" id="card2" style={{ width: "100%" }}>
                   <div className="card-body-2">
@@ -89,9 +89,9 @@ const LandingPage = () => {
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="row">
                 {/* Web Design Card */}
-                <div id="card" className="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up-left" data-aos-delay="600">
+                <div id="card" className="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up-left" data-aos-delay="600" data-aos-offset="100">
                   <Link to="/featured-work" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <div className="card" id="card3" style={{ width: "100%" }}>
+                    <div className="card" id="card3" style={{ width: "100%" }} >
                       <div className="card-body-3">
                         <img alt="folder" className="designs__icon" src="https://res.cloudinary.com/kadet/image/upload/q_100/v1675421671/petra-portfolio/folder_bdbtzn.svg" />
                         <span><h2 className="card-text-3-hover">View</h2></span>
@@ -103,7 +103,7 @@ const LandingPage = () => {
                 </div>
 
                 {/* Medium Articles Card */}
-                <div id="card" className="col-lg-6 col-md-6 col-sm-12 medium-article" data-aos="fade-up-left" data-aos-delay="800">
+                <div id="card" className="col-lg-6 col-md-6 col-sm-12 medium-article" data-aos="fade-up-left" data-aos-delay="800" data-aos-offset="100">
                   <a href="https://medium.com/@oyemwilson1" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div className="card" style={{ width: "100%" }}>
                       <div className="card-body-4">
@@ -118,7 +118,7 @@ const LandingPage = () => {
             </div>
 
             {/* Skills Card */}
-            <div id="card" className="col-lg-6 col-md-6 col-sm-12 what-i-do" data-aos="fade-up-left" data-aos-delay="1000"   onClick={() => setIsModalOpen(true)}  // Add this line
+            <div id="card" className="col-lg-6 col-md-6 col-sm-12 what-i-do" data-aos="fade-up-left" data-aos-delay="1000"  data-aos-offset="100"onClick={() => setIsModalOpen(true)}  // Add this line
   style={{ cursor: 'pointer' }} >
               {/* <Link to="/skills" style={{ textDecoration: 'none', color: 'inherit' }}> */}
                 <div className="card" style={{ width: "100%" }}>
