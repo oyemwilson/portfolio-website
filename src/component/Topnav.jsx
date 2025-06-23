@@ -48,7 +48,7 @@ const Topnav = () => {
               </Nav.Link>
             </div>
             <div data-aos="fade-left" data-aos-delay="500">
-              <Nav.Link as={Link} to="https://docs.google.com/document/d/1OY3Z07PtJy3NQvLD3biaC5YbqOTy7KjTkFqVk3zEacw/edit?usp=sharing" target="_blank" className="me-3">Resume</Nav.Link>
+              <Nav.Link as={Link} to="https://docs.google.com/document/d/1yiA5x8n-V8mTjDXKRt7mg7XMtaDnRIGpKonc4mpOW9Y/edit?usp=sharing" target="_blank" className="me-3">Resume</Nav.Link>
             </div>
             {/* <div data-aos="fade-left" data-aos-delay="600">
             <Nav.Link href="#" className="me-3">More</Nav.Link>

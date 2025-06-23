@@ -12,11 +12,16 @@ const LandingPage = () => {
   const [expanded, setExpanded] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true,       // <-- animations happen only once
+    offset: 0,       // <-- trigger as soon as they come into view
+    startEvent: 'DOMContentLoaded',
+  });
+  AOS.refreshHard(); // <-- Force recomputation so all elements trigger
+}, []);
+
 
   return (
     <>
@@ -74,7 +79,7 @@ const LandingPage = () => {
                 <div className="card" id="card2" style={{ width: "100%" }}>
                   <div className="card-body-2">
                     <p className="card-title-2">Featured Work</p>
-                    <h1 className="card-text-2">View My Case Study</h1>
+                    <h1 className="card-text-2">View My Web Designs</h1>
                     <div>
                       <img alt="screens" src="https://res.cloudinary.com/kadet/image/upload/f_webp/v1675420631/petra-portfolio/case-study-screens_it9acy.png" />
                     </div>
@@ -90,12 +95,12 @@ const LandingPage = () => {
               <div className="row">
                 {/* Web Design Card */}
                 <div id="card" className="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up-left" data-aos-delay="600" data-aos-offset="100">
-                  <Link to="/featured-work" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <Link to="https://docs.google.com/document/d/1yiA5x8n-V8mTjDXKRt7mg7XMtaDnRIGpKonc4mpOW9Y/edit?usp=sharing" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div className="card" id="card3" style={{ width: "100%" }} >
                       <div className="card-body-3">
                         <img alt="folder" className="designs__icon" src="https://res.cloudinary.com/kadet/image/upload/q_100/v1675421671/petra-portfolio/folder_bdbtzn.svg" />
                         <span><h2 className="card-text-3-hover">View</h2></span>
-                        <h2 className="card-text-3">My Web Design</h2>
+                        <h2 className="card-text-3">My Resume</h2>
                       </div>
                       <img alt="arrow" id="arrow-image3" className="position-absolute end-0" src="https://res.cloudinary.com/kadet/image/upload/q_100/v1675421671/petra-portfolio/arrow-right_m6ehs0.svg" />
                     </div>

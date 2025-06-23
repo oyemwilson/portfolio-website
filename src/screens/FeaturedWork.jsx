@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../assets/styles/featuredwork.css';
 import Topnav from '../component/Topnav';
 import { Link } from 'react-router-dom';
+
 const UIDesigns = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [loadedImages, setLoadedImages] = useState(new Set());
 
   const slides = [
     {
@@ -13,6 +16,30 @@ const UIDesigns = () => {
       link: 'https://sprainers-1.onrender.com'
     },
     {
+      src: "/assets/images/cryptodashboard.png",
+      alt: "A Real-Time Crypto Currency Dashboard Built with React, Recharts, and Sparklines, powered by the CoinGecko API. Displays live prices and trends with interactive charts and minimal, beautiful UI for a seamless crypto-tracking experience.",
+      size: { width: '40.3vw', height: '23.7vw' },
+      link: 'https://cryptodashboard-jh8c.onrender.com/'
+    },
+    {
+      src: "/assets/images/synai.png",
+      alt: "Designed and developed a responsive, visually engaging landing page to showcase a product/service. Built with a mobile-first approach using  React.js and Tailwind CSS to ensure seamless user experience across all devices. Features include a clean, minimal layout, smooth animations, interactive call-to-action elements, and optimized performance for fast load times",
+      size: { width: '40.3vw', height: '23.7vw' },
+      link: 'https://synai-bn3y.onrender.com'
+    },
+    {
+      src: "/assets/images/mockdatagenerator.png",
+      alt: "A lightweight web application built with Next.js that allows users to generate customizable mock data quickly and efficiently. it enables you to produce realistic, random datasets with a few simple clicks. Once the data is generated, the app provides a one-click option to download the results as a JSON file, making it easy to integrate into your testing or prototyping ",
+      size: { width: '40.3vw', height: '23.7vw' },
+      link: 'https://mockdatageneratorr.onrender.com'
+    },
+    {
+      src: "/assets/images/payperlesspanda.png",
+      alt: "Designed and developed a responsive, visually engaging landing page to showcase a product/service. Built with a mobile-first approach using  React.js and Tailwind CSS to ensure seamless user experience across all devices. Features include a clean, minimal layout, smooth animations, interactive call-to-action elements, and optimized performance for fast load times",
+      size: { width: '40.3vw', height: '23.7vw' },
+      link: 'https://payperlesspanda.onrender.com/'
+    },
+    {
       src: "/assets/images/work2.png",
       alt: "Created a job website with three distinct roles: user, employer, and applicant. Employers can post job listings and manage applications, while users can browse and apply for jobs. Applicants can track their application status and manage profiles. Developed using React.js, Node.js, Express, and MongoDB to ensure smooth functionality and data management.",
       size: { width: '41.3vw', height: '23.7vw' },
@@ -20,7 +47,7 @@ const UIDesigns = () => {
     },
     {
       src: "/assets/images/work3.png",
-      alt: "Built a comprehensive HR management application with three user roles: admin, HR, and employee. The app streamlines all HR processes, including employee management, leave applications, payroll, and performance tracking. Employees can apply for leave, update personal information, and view payslips, while HR manages employee records and approvals. Developed using the MERN stack",
+      alt: "Developed a MERN-stack HR management app with three roles — admin, HR, and employee —to streamline leave requests, payroll, performance tracking, and employee records. Employees can view payslips and apply for leave, while HR manages approvals and updates.",
       size: { width: '42.3vw', height: '23.7vw' },
       link: 'https://tiide-hr.netlify.app/'
     },
@@ -30,32 +57,19 @@ const UIDesigns = () => {
       size: { width: '43.3vw', height: '23.7vw' },
       link: 'https://tiide-mini.netlify.app/'
     },
-    // {
-    //   src: "https://res.cloudinary.com/kadet/image/upload/f_webp/v1675419601/petra-portfolio/ui-shot-5_sairy2.png",
-    //   alt: "Buddy Wallet",
-    //   size: { width: '29.3rem', height: '46.7rem' },
-    // },
-    // {
-    //   src: "https://res.cloudinary.com/kadet/image/upload/f_webp/v1675419602/petra-portfolio/ui-shot-6_zc9thc.png",
-    //   alt: "Amalon",
-    //   size: { width: '56.2rem', height: '35rem' },
-    // },
-    // {
-    //   src: "https://res.cloudinary.com/kadet/image/upload/f_webp/v1675419603/petra-portfolio/ui-shot-7_fqktqr.png",
-    //   alt: "Foodhub",
-    //   size: { width: '29.3rem', height: '46.7rem' },
-    // },
-    // {
-    //   src: "https://res.cloudinary.com/kadet/image/upload/f_webp/v1675419603/petra-portfolio/ui-shot-8_njmyg6.png",
-    //   alt: "Green Splash",
-    //   size: { width: '29.3rem', height: '46.7rem' },
-    // },
-    // {
-    //   src: "https://res.cloudinary.com/kadet/image/upload/f_webp/v1675419602/petra-portfolio/ui-shot-9_dqzzin.png",
-    //   alt: "A-spec Designs",
-    //   size: { width: '56.2rem', height: '35rem' },
-    // },
   ];
+
+  // Track when all images are loaded
+  useEffect(() => {
+    if (loadedImages.size === slides.length) {
+      setImagesLoaded(true);
+    }
+  }, [loadedImages, slides.length]);
+
+  // Handle image load
+  const handleImageLoad = (src) => {
+    setLoadedImages((prev) => new Set([...prev, src]));
+  };
 
   const handlePrev = () => {
     setActiveIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
@@ -67,7 +81,13 @@ const UIDesigns = () => {
 
   return (
     <>
-      <main className="p-ui-designs">
+      {!imagesLoaded && (
+        <div className="loading-screen">
+          <div className="spinner"></div>
+          <p>Loading Projects...</p>
+        </div>
+      )}
+      <main className={`p-ui-designs ${!imagesLoaded ? 'hidden' : ''}`}>
         <div className="left">
           <button className="left__back-btn">
             <Link to="/">
@@ -76,7 +96,6 @@ const UIDesigns = () => {
                 alt="back arrow"
               />
             </Link>
-            {/* <p className="left__title paragraph--2">Back</p> */}
           </button>
           <div className="socials">
             <a
@@ -126,23 +145,23 @@ const UIDesigns = () => {
                     transform: `translate(${(index - activeIndex) * 60}vw, ${(index - activeIndex) * -40}vw)`,
                   }}
                 >
-                  <a href={slide.link} target="_blank" rel="noopener noreferrer" style={{ cursor: 'default' }}>  {/* Using <a> instead of <Link> */}
+                  <a href={slide.link} target="_blank" rel="noopener noreferrer" style={{ cursor: 'default' }}>
                     <span className='no-pointer'>
                       <img
                         className="carousel__slide-image"
                         src={slide.src}
                         alt={slide.alt}
                         style={{ width: slide.size.width, height: slide.size.height }}
+                        onLoad={() => handleImageLoad(slide.src)}
                       />
                       <span className="carousel__tooltip">{slide.alt}</span>
                     </span>
                   </a>
                 </figure>
               ))}
-
             </div>
             <div className="carousel__control">
-              <button className="carousel__control-btn next" onClick={handleNext} disabled={activeIndex === 3}>
+              <button className="carousel__control-btn next" onClick={handleNext} disabled={activeIndex === slides.length - 1}>
                 <span className="carousel__control-line"></span>
                 <span className="paragraph--3">NEXT</span>
               </button>
@@ -150,7 +169,7 @@ const UIDesigns = () => {
           </div>
         </div>
 
-        <div className="right ">
+        <div className="right">
           <div className="right__text">
             <p className="right__subtitle paragraph--2" id='shot'>
               Shot <span className="right__subtitle--span">{activeIndex + 1}</span> of {slides.length}

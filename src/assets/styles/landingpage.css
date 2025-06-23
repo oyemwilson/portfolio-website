@@ -308,7 +308,7 @@ margin-left: 2vw;
 .card-text-2 {
 
   white-space: nowrap; /* Prevent text from wrapping */
-  transform: translateX(-11.6vw); /* Initially show "Case Study" part */
+  transform: translateX(-12.0vw); /* Initially show "Case Study" part */
   transition: transform 0.9s ease-in-out; /* Smooth slide-in effect */
 }
 
@@ -360,8 +360,8 @@ margin-left: 2vw;
     width: 10vw;
   }
   .card-body-3{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: 8vw;
   }
   #arrow-image3{
