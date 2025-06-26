@@ -15,6 +15,12 @@ const UIDesigns = () => {
       size: { width: '40.3vw', height: '23.7vw' },
       link: 'https://sprainers-1.onrender.com'
     },
+        {
+      src: "/assets/images/payperlesspanda.png",
+      alt: "Built a responsive landing page for an invoice generator using React.js and Tailwind CSS. Designed a clean, mobile-friendly interface with smooth interactions and fast load times.",
+      size: { width: '40.3vw', height: '23.7vw' },
+      link: 'https://payperlesspanda.onrender.com/'
+    },
     {
       src: "/assets/images/cryptodashboard.png",
       alt: "A Real-Time Crypto Currency Dashboard Built with React, Recharts, and Sparklines, powered by the CoinGecko API. Displays live prices and trends with interactive charts and minimal, beautiful UI for a seamless crypto-tracking experience.",
@@ -32,12 +38,6 @@ const UIDesigns = () => {
       alt: "A lightweight web application built with Next.js that allows users to generate customizable mock data quickly and efficiently. it enables you to produce realistic, random datasets with a few simple clicks. Once the data is generated, the app provides a one-click option to download the results as a JSON file, making it easy to integrate into your testing or prototyping ",
       size: { width: '40.3vw', height: '23.7vw' },
       link: 'https://mockdatageneratorr.onrender.com'
-    },
-    {
-      src: "/assets/images/payperlesspanda.png",
-      alt: "Designed and developed a responsive, visually engaging landing page to showcase a product/service. Built with a mobile-first approach using  React.js and Tailwind CSS to ensure seamless user experience across all devices. Features include a clean, minimal layout, smooth animations, interactive call-to-action elements, and optimized performance for fast load times",
-      size: { width: '40.3vw', height: '23.7vw' },
-      link: 'https://payperlesspanda.onrender.com/'
     },
     {
       src: "/assets/images/work2.png",
