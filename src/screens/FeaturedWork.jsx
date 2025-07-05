@@ -15,6 +15,12 @@ const UIDesigns = () => {
       size: { width: '40.3vw', height: '23.7vw' },
       link: 'https://sprainers-1.onrender.com'
     },
+            {
+      src: "/assets/images/jotpad.png",
+      alt: "Built a responsive landing page for an invoice generator using React.js and Tailwind CSS. Designed a clean, mobile-friendly interface with smooth interactions and fast load times.",
+      size: { width: '40.3vw', height: '23.7vw' },
+      link: 'https://jotpad-5bj4.onrender.com/'
+    },
         {
       src: "/assets/images/payperlesspanda.png",
       alt: "Built a responsive landing page for an invoice generator using React.js and Tailwind CSS. Designed a clean, mobile-friendly interface with smooth interactions and fast load times.",
