@@ -28,7 +28,7 @@ const UIDesigns = () => {
       link: 'https://payperlesspanda.onrender.com/'
     },
     {
-      src: "/assets/images/cryptodashboard.png",
+      src: "/assets/images/patientdashboard.png",
       alt: "A Patient Health Dashboard built with React, Recharts, and Sparklines. Visualizes vitals and lab test results for multiple patients with interactive charts, per-patient filters, and a clean, accessible UI for quick clinical insights.",
       size: { width: '40.3vw', height: '23.7vw' },
       link: "https://patient-dash.onrender.com/"
