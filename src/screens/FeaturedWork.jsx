@@ -13,7 +13,7 @@ const UIDesigns = () => {
       src: "/assets/images/voicesoncanvas.png",
       alt: "Developed a fully functional e-market website with separate admin and user interfaces. The admin panel manages products, orders, and users, while the user side [buyer/seller] allows for product posting, browsing, secure checkout, and order tracking. Integrated PayPal/paystack API for seamless payment processing. Built using React.js, Node.js, Express, and MongoDB.",
       size: { width: '40.3vw', height: '23.7vw' },
-      link: 'https://sprainers-1.onrender.com'
+      link: 'https://voicesoncanvas-g4rb.onrender.com/'
     },
     {
       src: "/assets/images/jotpad.png",
