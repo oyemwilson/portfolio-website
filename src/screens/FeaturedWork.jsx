@@ -10,18 +10,18 @@ const UIDesigns = () => {
 
   const slides = [
     {
-      src: "/assets/images/work1.png",
-      alt: "Developed a fully functional e-commerce website with separate admin and user interfaces. The admin panel manages products, orders, and users, while the user side allows for product browsing, secure checkout, and order tracking. Integrated PayPal API for seamless payment processing. Built using React.js, Node.js, Express, and MongoDB.",
+      src: "/assets/images/voicesoncanvas.png",
+      alt: "Developed a fully functional e-market website with separate admin and user interfaces. The admin panel manages products, orders, and users, while the user side [buyer/seller] allows for product posting, browsing, secure checkout, and order tracking. Integrated PayPal/paystack API for seamless payment processing. Built using React.js, Node.js, Express, and MongoDB.",
       size: { width: '40.3vw', height: '23.7vw' },
       link: 'https://sprainers-1.onrender.com'
     },
-            {
+    {
       src: "/assets/images/jotpad.png",
       alt: "Built a responsive landing page for an invoice generator using React.js and Tailwind CSS. Designed a clean, mobile-friendly interface with smooth interactions and fast load times.",
       size: { width: '40.3vw', height: '23.7vw' },
       link: 'https://jotpad-5bj4.onrender.com/'
     },
-        {
+    {
       src: "/assets/images/payperlesspanda.png",
       alt: "Built a responsive landing page for an invoice generator using React.js and Tailwind CSS. Designed a clean, mobile-friendly interface with smooth interactions and fast load times.",
       size: { width: '40.3vw', height: '23.7vw' },
@@ -29,9 +29,9 @@ const UIDesigns = () => {
     },
     {
       src: "/assets/images/cryptodashboard.png",
-      alt: "A Real-Time Crypto Currency Dashboard Built with React, Recharts, and Sparklines, powered by the CoinGecko API. Displays live prices and trends with interactive charts and minimal, beautiful UI for a seamless crypto-tracking experience.",
+      alt: "A Patient Health Dashboard built with React, Recharts, and Sparklines. Visualizes vitals and lab test results for multiple patients with interactive charts, per-patient filters, and a clean, accessible UI for quick clinical insights.",
       size: { width: '40.3vw', height: '23.7vw' },
-      link: 'https://cryptodashboard-jh8c.onrender.com/'
+      link: "https://patient-dash.onrender.com/"
     },
     {
       src: "/assets/images/synai.png",
