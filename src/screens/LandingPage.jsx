@@ -95,7 +95,7 @@ useEffect(() => {
               <div className="row">
                 {/* Web Design Card */}
                 <div id="card" className="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up-left" data-aos-delay="600" data-aos-offset="100">
-                  <Link to="https://docs.google.com/document/d/1yiA5x8n-V8mTjDXKRt7mg7XMtaDnRIGpKonc4mpOW9Y/edit?usp=sharing" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <Link to="https://docs.google.com/document/d/1pELZlC6sAyu0RQvoVu87GfbLQUONW9oFk1mjIo2TrSQ/edit?usp=sharing"  target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div className="card" id="card3" style={{ width: "100%" }} >
                       <div className="card-body-3">
                         <img alt="folder" className="designs__icon" src="https://res.cloudinary.com/kadet/image/upload/q_100/v1675421671/petra-portfolio/folder_bdbtzn.svg" />
