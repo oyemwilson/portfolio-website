@@ -1,28 +1,171 @@
-#cardd{
-    background-color: black !important;
-    font-size: larger;
-    border: 1px solid #323335;
-    margin: 0 1.2rem;
-    padding: 5rem 2.4rem;
-    border-radius: 2rem;
+/* Skill Modal Responsive Styles */
 
-    pointer-events: all;
+/* Modal backdrop */
+.modal-backdrop {
+  background-color: black;
+}
 
-    /* top: 5vw !important */
+/* Modal dialog adjustments */
+.modal-dialog {
+  max-width: 90%;
+  margin: 1rem auto;
 }
-.close{
-    background-color: black;
-    border: 0;
+
+/* Modal content */
+.modal-content {
+  border-radius: 8px;
+  border: 1px solid #323335 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
-.modal-title {
-    text-decoration: none; /* Remove underline from title */
+
+/* Modal header */
+.modal-header {
+  border-bottom: 1px solid #323335 !important;
+  background-color: black;
+}
+
+/* Modal body */
+.modal-body {
+  background-color: black;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* Skill items */
+.skill-item {
+  transition: background-color 0.2s ease;
+}
+
+.skill-item:hover {
+  background-color: rgba(50, 51, 53, 0.3);
+}
+
+/* Close button hover effect */
+.close:hover {
+  opacity: 0.7;
+}
+
+/* Scrollbar styling */
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #2c2e30;
+  border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #495057;
+  border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 95%;
+    margin: 0.5rem;
+  }
+  
+  .modal-content {
+    margin: 0;
+  }
+  
+  .modal-header {
+    padding: 1rem;
+  }
+  
+  .modal-body {
+    padding: 1rem;
+    max-height: 60vh;
   }
   
   .skill-item {
-    border-bottom: 1px solid #323335;
-    margin-bottom: 8px; /* Space between items */
+    padding: 0.75rem 1rem !important;
+    min-height: 48px !important; /* Better touch target for mobile */
   }
-  .modal-header{
-    text-decoration: none !important;
-    border-bottom: none !important;
-  }  
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .modal-content {
+    margin: 1rem;
+    max-height: 90vh;
+  }
+  
+  .col-12 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .skill-item {
+    font-size: 0.95rem !important;
+    padding: 0.75rem !important;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 375px) {
+  .modal-header {
+    padding: 0.75rem;
+  }
+  
+  .modal-body {
+    padding: 0.75rem;
+  }
+  
+  .skill-item {
+    font-size: 0.9rem !important;
+    padding: 0.6rem !important;
+    min-height: 42px !important;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+  .modal-content {
+    max-height: 80vh;
+  }
+  
+  .modal-body {
+    max-height: 50vh;
+  }
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Animation for modal */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-content {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+/* Ensure proper z-index */
+.modal {
+  z-index: 1050;
+}

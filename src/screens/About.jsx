@@ -40,10 +40,10 @@ const About = () => {
                         <div id="carouselExampleSlidesOnly" className="carousel-slide" data-bs-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active" data-bs-interval="2000">
-                                    <img src="/assets/images/img2.png" alt="First slide" style={{ width: "30vw", height: "18rem" }} />
+                                    <img src="/assets/images/img2.webp" alt="First slide" style={{ width: "30vw", height: "18rem" }} />
                                 </div>
                                 <div className="carousel-item" data-bs-interval="2000">
-                                    <img src="/assets/images/IMG_9930.jpg" alt="Second slide" style={{ width: "30vw", height: "18rem" }} />
+                                    <img src="/assets/images/IMG_9930.webp" alt="Second slide" style={{ width: "30vw", height: "18rem" }} />
                                 </div>
                             </div>
                         </div>

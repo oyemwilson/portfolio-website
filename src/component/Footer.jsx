@@ -34,7 +34,7 @@ const Footer = () => {
               />
             </figure>
           </a>                </div>
-        <p className="mt-5">© 2024 OYEM WILSON. All Rights Reserved.</p>
+        <p className="mt-5">© 2025 OYEM WILSON. All Rights Reserved.</p>
       </div>
     </footer>
   );
